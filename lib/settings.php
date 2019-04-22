@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatformCoop_Support\Settings;
+namespace PlatformCoop\Settings;
 
 add_action('cmb2_admin_init', function () {
 	$cmb = new_cmb2_box([
@@ -54,10 +54,8 @@ USA',
 function get_config_option( $key = '', $default = false )
 {
 	if (function_exists('cmb2_get_option')) {
-		// Use cmb2_get_option as it passes through some key filters.
 		return cmb2_get_option('platformcoop_configuration', $key, $default);
 	}
-	// Fallback to get_option if CMB2 is not loaded yet.
 	$opts = get_option('platformcoop_configuration', $default);
 	$val = $default;
 	if ('all' == $key) {
