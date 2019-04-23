@@ -12,16 +12,6 @@ add_action('cmb2_admin_init', function () {
 		'capability' => 'manage_options',
 	]);
 	$cmb->add_field([
-		'name' => esc_html__('Mailing Address', 'platformcoop-support'),
-		'desc' => esc_html__('Mailing address for the Platform Cooperativism Consortium (used in site footer and some page templates).', 'platformcoop-support'),
-		'id' => 'mailing_address',
-		'type' => 'textarea_small',
-		'default' => 'Platform Cooperativism Consortium
-79 5th Ave 16th floor, Rm. 1601
-New York, NY 10003
-USA',
-	]);
-	$cmb->add_field([
 		'name' => esc_html__('Donate Link', 'platformcoop-support'),
 		'desc' => esc_html__('Link to external donation form (used in site footer and some page templates).', 'platformcoop-support'),
 		'id' => 'donate_link',
