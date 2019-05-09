@@ -27,4 +27,8 @@ foreach( [
 }
 */
 
-require_once __DIR__ . '/lib/settings.php';
+add_action('acf/init', function() {
+    require __DIR__ . '/blocks/child-pages.php';
+});
+
+acf_add_options_page( [ 'page_title' => __('Configuration', 'platformcoop-support') ] );
