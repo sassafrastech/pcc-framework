@@ -7,27 +7,44 @@
  * Author URI:      https://platform.coop
  * Text Domain:     platformcoop-support
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.2.0
  *
  * @package         PlatformCoop
  */
 
+require_once dirname(__FILE__) . '/lib/utils.php';
+
 foreach ([
-    // 'pcc-chapter',
-    'pcc-event',
-    // 'pcc-job',
-    // 'pcc-news',
-    // 'pcc-person',
-    // 'pcc-project',
-    // 'pcc-resource',
-    // 'pcc-story'
-] as $post_type) {
-    require_once(dirname(__FILE__) . "/post-types/$post_type.php");
+    'event',
+    'person',
+] as $posttype) {
+    require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
+    add_action('init', '\\PlatformCoop\\PostTypes\\' . ucfirst($posttype) . '\\init');
 }
 
-add_action('acf/init', function () {
-    require __DIR__ . '/blocks/child-pages.php';
-    require __DIR__ . '/blocks/social-links.php';
-});
+require_once dirname(__FILE__) . '/lib/blocks.php';
 
-acf_add_options_page([ 'page_title' => __('Configuration', 'platformcoop-support') ]);
+add_action('init', '\\PlatformCoop\\Blocks\\register_block_assets');
+
+foreach ([
+    'child-pages',
+    'social-links',
+] as $block) {
+    require_once dirname(__FILE__) . "/lib/blocks/$block.php";
+    $pieces = explode('-', $block);
+    $pieces = array_map('ucfirst', $pieces);
+    $block = implode('', $pieces);
+    add_action('init', "\\PlatformCoop\\Blocks\\$block\\register_block");
+}
+
+if (is_admin()) {
+    require_once dirname(__FILE__) . '/lib/admin.php';
+    require_once dirname(__FILE__) . '/lib/settings.php';
+
+    add_action('admin_enqueue_scripts', '\\PlatformCoop\\Admin\\enqueue_assets');
+    add_action('cmb2_admin_init', '\\PlatformCoop\\PostTypes\\Event\\data');
+    add_action('cmb2_admin_init', '\\PlatformCoop\\PostTypes\\Event\\program');
+    add_action('cmb2_admin_init', '\\PlatformCoop\\PostTypes\\Event\\sponsors');
+    add_action('cmb2_admin_init', '\\PlatformCoop\\Settings\\page');
+    add_filter('acf/settings/show_admin', '__return_false');
+}
