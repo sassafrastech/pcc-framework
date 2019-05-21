@@ -25,7 +25,7 @@ None yet.
 
 == Changelog ==
 = 0.3.2 =
-* Update license
+* Update license: [aaa8b4c](https://github.com/platform-coop-toolkit/platformcoop-support/commit/aaa8b4c0bdc58347cc709b6aac977a182f586278)
 
 = 0.3.1 =
 * Normalize composer.json: [e90192c](https://github.com/platform-coop-toolkit/platformcoop-support/commit/e90192c9321c466d7b743c086ddd8acc4265736b)
