@@ -1,7 +1,7 @@
 {
     "name": "platformcoop/platformcoop-support",
-    "description": "Utilities for the Platform Cooperativism Consortium's website.",
     "type": "wordpress-plugin",
+    "description": "Utilities for the Platform Cooperativism Consortium's website.",
     "authors": [
         {
             "name": "Platform Cooperativism Consortium",
@@ -13,10 +13,12 @@
         "johnbillion/extended-cpts": "^4.2"
     },
     "require-dev": {
-      "squizlabs/php_codesniffer": "^2.8.0"
+        "squizlabs/php_codesniffer": "^2.8.0"
     },
     "scripts": {
-      "test": ["@standards"],
-      "standards": "vendor/bin/phpcs . --extensions=php --standard=phpcs.xml.dist --ignore=node_modules,tests,vendor"
+        "standards": "vendor/bin/phpcs . --extensions=php --standard=phpcs.xml.dist --ignore=node_modules,tests,vendor",
+        "test": [
+            "@standards"
+        ]
     }
 }
