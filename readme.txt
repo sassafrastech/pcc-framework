@@ -1,15 +1,17 @@
 === Platform Coop Support ===
 Contributors: greatislander
 Tags: blocks, custom post types
+License: BSD 3-Clause "New" License
+License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.2
 Tested up to: 5.2
-Stable tag: 0.3.0
+Stable tag: 0.3.2
 
-Block and Custom Post Type utilities for the Platform Cooperativism Consortium.
+Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
 
 == Description ==
 
-Block and Custom Post Type utilities for the Platform Cooperativism Consortium.
+Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
 
 == Installation ==
 
@@ -22,6 +24,13 @@ Block and Custom Post Type utilities for the Platform Cooperativism Consortium.
 None yet.
 
 == Changelog ==
+= 0.3.2 =
+* Update license
+
+= 0.3.1 =
+* Normalize composer.json: [e90192c](https://github.com/platform-coop-toolkit/platformcoop-support/commit/e90192c9321c466d7b743c086ddd8acc4265736b)
+* Clean up package.json: [#9](https://github.com/platform-coop-toolkit/platformcoop-support/pull/9)
+
 = 0.3.0 =
 * Remove unused post types.
 * Make events hierarchical.

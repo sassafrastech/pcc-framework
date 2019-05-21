@@ -1,8 +1,9 @@
 {
   "name": "@platformcoop/platformcoop-support",
   "version": "0.3.1",
-  "description": "Utilities for the Platform Cooperativism Consortium's website.",
+  "description": "Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.",
   "author": "Platform Cooperativism Consortium",
+  "license": "BSD-3-Clause",
   "keywords": [
     "wordpress",
     "plugin",
@@ -27,5 +28,13 @@
     "lint:js": "wp-scripts lint-js ./src",
     "lint:css": "wp-scripts lint-style './src/**/*.css'",
     "lint:pkg-json": "wp-scripts lint-pkg-json ."
+  },
+  "npmPackageJsonLintConfig": {
+    "extends": "@wordpress/npm-package-json-lint-config",
+    "rules": {
+      "valid-values-license": [ "error", [
+        "BSD-3-Clause"
+      ] ]
+    }
   }
 }

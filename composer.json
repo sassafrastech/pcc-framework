@@ -1,7 +1,14 @@
 {
     "name": "platformcoop/platformcoop-support",
     "type": "wordpress-plugin",
-    "description": "Utilities for the Platform Cooperativism Consortium's website.",
+    "description": "Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.",
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "custom post types",
+        "blocks"
+    ],
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Platform Cooperativism Consortium",

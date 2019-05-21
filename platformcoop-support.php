@@ -2,12 +2,14 @@
 /**
  * Plugin Name:     Platform Coop Support
  * Plugin URI:      https://platform.coop
- * Description:     Utilities for the Platform Cooperativism Consortium's website.
+ * Description:     Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
  * Author:          Platform Cooperativism Consortium
  * Author URI:      https://platform.coop
  * Text Domain:     platformcoop-support
  * Domain Path:     /languages
- * Version:         0.3.0
+ * License:         BSD 3-Clause "New" License
+ * License URI:     https://opensource.org/licenses/BSD-3-Clause
+ * Version:         0.3.2
  *
  * @package         PlatformCoop
  */
