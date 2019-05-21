@@ -1,6 +1,6 @@
 {
   "name": "@platformcoop/platformcoop-support",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.",
   "author": "Platform Cooperativism Consortium",
   "license": "BSD-3-Clause",
@@ -32,9 +32,12 @@
   "npmPackageJsonLintConfig": {
     "extends": "@wordpress/npm-package-json-lint-config",
     "rules": {
-      "valid-values-license": [ "error", [
-        "BSD-3-Clause"
-      ] ]
+      "valid-values-license": [
+        "error",
+        [
+          "BSD-3-Clause"
+        ]
+      ]
     }
   }
 }
