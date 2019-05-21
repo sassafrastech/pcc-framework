@@ -6,14 +6,18 @@ use function PlatformCoop\PostTypes\Person\get_people;
 
 /**
  * Registers the `pcc-event` post type.
+ *
+ * @return null
  */
 function init()
 {
     register_extended_post_type(
         'pcc-event',
         [
+            'hierarchical' => true,
             'menu_icon' => 'dashicons-calendar-alt',
             'show_in_rest' => true,
+            'supports' => ['title', 'editor', 'page-attributes', 'custom-fields'],
         ],
         [
             'singular' => __('Event', 'platformcoop-support'),
@@ -24,7 +28,48 @@ function init()
 }
 
 /**
+ * Registers meta fields for the `pcc-event` post type.
+ *
+ * @return null
+ */
+function register_meta()
+{
+    register_post_meta('pcc-event', 'pcc_event_start', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'integer',
+    ]);
+    register_post_meta('pcc-event', 'pcc_event_end', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'integer',
+    ]);
+    register_post_meta('pcc-event', 'pcc_event_venue', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+    ]);
+    register_post_meta('pcc-event', 'pcc_event_venue_address', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+    ]);
+    register_post_meta('pcc-event', 'pcc_event_registration_url', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+    ]);
+    register_post_meta('pcc-event', 'pcc_event_type', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+    ]);
+}
+
+/**
  * Registers the Event Data metabox and meta fields.
+ *
+ * @return null
  */
 function data()
 {
@@ -68,6 +113,7 @@ function data()
         'id'   => $prefix . 'registration_url',
         'type' => 'text_url',
         'protocols' => ['http', 'https'],
+        'show_on_cb' => 'PlatformCoop\PostTypes\Event\is_parent_event'
     ]);
 
     $cmb->add_field([
@@ -82,6 +128,7 @@ function data()
             'pcc' => __('PCC Event', 'platformcoop-support'),
             'icde' => __('ICDE Event', 'platformcoop-support'),
         ],
+        'show_on_cb' => 'PlatformCoop\PostTypes\Event\is_parent_event'
     ]);
 
     $cmb->add_field([
@@ -98,77 +145,9 @@ function data()
 }
 
 /**
- * Registers the Event Program metabox and meta fields.
- */
-function program()
-{
-    $prefix = 'pcc_event_';
-
-    $cmb = new_cmb2_box([
-        'id'            => 'event_program',
-        'title'         => __('Event Program', 'platformcoop-support'),
-        'object_types'  => ['pcc-event'],
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true,
-    ]);
-
-    $program_id = $cmb->add_field([
-        'id' => $prefix . 'program',
-        'type' => 'group',
-        'options' => [
-            'group_title' => __('Session {#}', 'platformcoop-support'),
-            'add_button' => __('Add Session', 'platformcoop-support'),
-            'remove_button' => __('Remove Session', 'platformcoop-support'),
-            'sortable' => true,
-        ],
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session Title', 'platformcoop-support'),
-        'id'   => 'title',
-        'type' => 'text',
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session Start', 'platformcoop-support'),
-        'id' => 'start',
-        'type' => 'text_datetime_timestamp'
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session End', 'platformcoop-support'),
-        'id' => 'end',
-        'type' => 'text_datetime_timestamp'
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session Venue', 'platformcoop-support'),
-        'id' => 'venue',
-        'type' => 'text',
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session Description', 'platformcoop-support'),
-        'id' => 'description',
-        'type' => 'wysiwyg',
-    ]);
-
-    $cmb->add_group_field($program_id, [
-        'name' => __('Session Participants', 'platformcoop-support'),
-        'id'   => 'participants',
-        'type' => 'select',
-        'show_option_none' => true,
-        'options' => get_people(),
-        'repeatable' => true,
-        'text' => [
-            'add_row_text' => __('Add Participant', 'platformcoop-support'),
-        ]
-    ]);
-}
-
-/**
  * Registers the Event Sponsors metabox and meta fields.
+ *
+ * @return null
  */
 function sponsors()
 {
@@ -181,10 +160,11 @@ function sponsors()
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true,
+        'show_on_cb'    => 'PlatformCoop\PostTypes\Event\is_parent_event'
     ]);
 
     $sponsor_id = $cmb->add_field([
-        'id' => $prefix . 'program',
+        'id' => $prefix . 'sponsors',
         'type' => 'group',
         'options' => [
             'group_title' => __('Sponsor {#}', 'platformcoop-support'),
@@ -225,4 +205,16 @@ function sponsors()
         ],
         'preview_size' => 'medium',
     ]);
+}
+
+/**
+ * Determine if event is a parent or a child (for CMB2's `show_on` callback).
+ *
+ * @param mixed $cmb The CMB2 meta box.
+ *
+ * @return bool
+ */
+function is_parent_event($cmb)
+{
+    return empty(get_post_ancestors($cmb->object_id));
 }
