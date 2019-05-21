@@ -1,9 +1,14 @@
 {
   "name": "@platformcoop/platformcoop-support",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Utilities for the Platform Cooperativism Consortium's website.",
   "author": "Platform Cooperativism Consortium",
-  "keywords": ["wordpress", "plugin", "custom post types", "blocks"],
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "custom post types",
+    "blocks"
+  ],
   "homepage": "https://github.com/greatislander/platformcoop-support",
   "repository": "https://github.com/greatislander/platformcoop-support",
   "bugs": "https://github.com/greatislander/platformcoop-support/issues",
