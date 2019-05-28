@@ -36,7 +36,6 @@ job-references:
       - run:
           name: "Run Tests"
           command: |
-            composer global require "phpunit/phpunit=5.7.*"
             composer install
             composer standards
             rm -rf $WP_TESTS_DIR $WP_CORE_DIR
