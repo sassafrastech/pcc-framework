@@ -1,5 +1,5 @@
 # PCC Framework #
-**Contributors:** greatislander  
+**Contributors:** [greatislander](https://profiles.wordpress.org/greatislander)  
 **Tags:** blocks, custom post types  
 **License:** BSD 3-Clause "New" License  
 **License URI:** https://opensource.org/licenses/BSD-3-Clause  
