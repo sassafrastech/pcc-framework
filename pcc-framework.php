@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Platform Cooperativism Consortium Framework
+ * Plugin Name:     PCC Framework
  * Plugin URI:      https://platform.coop
  * Description:     Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
  * Author:          Platform Cooperativism Consortium

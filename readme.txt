@@ -1,4 +1,4 @@
-=== Platform Cooperativism Consortium Framework ===
+=== PCC Framework ===
 Contributors: greatislander
 Tags: blocks, custom post types
 License: BSD 3-Clause "New" License
