@@ -3,9 +3,9 @@
 **Tags:** blocks, custom post types  
 **License:** BSD 3-Clause "New" License  
 **License URI:** https://opensource.org/licenses/BSD-3-Clause  
-**Requires at least:** 5.2  
-**Tested up to:** 5.2  
-**Stable tag:** 0.5.0  
+**Requires at least:** 5.2.1  
+**Tested up to:** 5.2.1  
+**Stable tag:** 0.6.0  
 
 Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
 
@@ -27,6 +27,10 @@ None yet.
 ### 0.6.0 ###
 * Rename plugin: #16
 * Add configuration for automatic deployment: #18
+* Update dependencies: #21, #22, #23, #25, #26
+* Add metadata fields and taxonomies to people (#27): #28
+* Unregister unnecessary blocks: #29
+* Add descriptions to event fields (#14): #30
 
 ### 0.5.0 ###
 * Add thumbnail support to events and people: #13
