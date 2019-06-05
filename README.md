@@ -61,5 +61,5 @@ None yet.
 
 ## Upgrade Notice ##
 
-### 0.2.0 ###
-This version requires [CMB2](https://github.com/CMB2/CMB2).
+### 0.6.0 ###
+The plugin has been renamed to pcc-framework. Removing and reinstalling is recommended.
