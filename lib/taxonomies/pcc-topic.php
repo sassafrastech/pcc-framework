@@ -1,15 +1,15 @@
 <?php
 
-namespace PCCFramework\Taxonomies\Focus;
+namespace PCCFramework\Taxonomies\Topic;
 
 /**
- * Registers the `pcc_focs` taxonomy,
+ * Registers the `pcc_topic` taxonomy,
  * for use with 'pcc-person', 'pcc-resource', and 'post'.
  */
 function init()
 {
     register_extended_taxonomy(
-        'pcc-focus',
+        'pcc-topic',
         [
             'pcc-person',
             'post'
@@ -19,9 +19,9 @@ function init()
             'show_in_rest' => true,
         ],
         [
-            'singular' => __('Focus Area', 'pcc-framework'),
-            'plural'   => __('Focus Areas', 'pcc-framework'),
-            'slug'     => __('focus', 'pcc-framework'),
+            'singular' => __('Topic', 'pcc-framework'),
+            'plural'   => __('Topics', 'pcc-framework'),
+            'slug'     => __('topic', 'pcc-framework'),
         ]
     );
 }
