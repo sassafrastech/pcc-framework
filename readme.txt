@@ -1,17 +1,34 @@
 === PCC Framework ===
 Contributors: greatislander
-Tags: blocks, custom post types
+Tags: blocks, custom post types, taxonomies
 License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.2.1
 Tested up to: 5.2.1
-Stable tag: 0.6.0
+Stable tag: 0.7.0
 
-Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
+[![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
+
+Utilities, blocks, custom post types, and taxonomies for the Platform Cooperativism Consortium website.
 
 == Description ==
 
-Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.
+This plugin adds the following custom components for the Platform Cooperativism Consortium:
+
+Blocks:
+
+* Child Pages
+* Social Links
+
+Custom Post Types:
+
+* Events
+* People
+
+Custom Taxonomies:
+
+* Roles
+* Topics
 
 == Installation ==
 
@@ -20,12 +37,12 @@ Utilities, custom post types and blocks for the Platform Cooperativism Consortiu
 3. There is no step three.
 
 == Frequently Asked Questions ==
-
 None yet.
 
 == Changelog ==
 = 0.7.0 =
 * Add fields for image and video attribution (#32): #33
+* Add Gulp tasks for CSS build and readme to Markdown (#31): #34
 
 = 0.6.0 =
 * Rename plugin: #16
@@ -63,6 +80,5 @@ None yet.
 * Scaffold initial post types
 
 == Upgrade Notice ==
-
 = 0.6.0 =
 The plugin has been renamed to pcc-framework. Removing and reinstalling is recommended.
