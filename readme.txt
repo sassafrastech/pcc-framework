@@ -45,7 +45,7 @@ None yet.
 * Bump @wordpress/scripts from 3.2.1 to 3.3.0: #37
 * Bump johnbillion/extended-cpts from 4.2.3 to 4.2.5: #38, #44
 * Bump commerceguys/addressing from 1.0.4 to 1.0.5: #43
-* Update package scope: 61c1d91
+* Update package scope: 6ac1d91
 * Add participants button and program button (fix #39, fix #40): #45
 
 = 0.8.0 =
