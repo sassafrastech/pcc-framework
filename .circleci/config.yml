@@ -77,12 +77,10 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: dev
       - deploy_plugin_production:
           requires:
             - build
           filters:
-            tags:
-              only: /.*/
             branches:
-              ignore: /.*/
+              only: master
