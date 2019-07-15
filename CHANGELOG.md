@@ -1,4 +1,9 @@
 # Changelog #
+## 1.0.0 ##
+* Bump autoprefixer from 9.6.0 to 9.6.1: #46
+* Bump lodash from 4.17.11 to 4.17.14: #47
+* Add placeholder image for child pages: #48
+
 ## 0.9.0 ##
 * Bump @wordpress/eslint-plugin from 2.2.0 to 2.3.0: #36
 * Bump @wordpress/scripts from 3.2.1 to 3.3.0: #37

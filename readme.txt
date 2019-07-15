@@ -3,9 +3,9 @@ Contributors: greatislander
 Tags: blocks, custom post types, taxonomies
 License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
-Requires at least: 5.2.1
-Tested up to: 5.2.1
-Stable tag: 0.9.0
+Requires at least: 5.2.2
+Tested up to: 5.2.2
+Stable tag: 1.0.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -40,6 +40,11 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 1.0.0 =
+* Bump autoprefixer from 9.6.0 to 9.6.1: #46
+* Bump lodash from 4.17.11 to 4.17.14: #47
+* Add placeholder image for child pages: #48
+
 = 0.9.0 =
 * Bump @wordpress/eslint-plugin from 2.2.0 to 2.3.0: #36
 * Bump @wordpress/scripts from 3.2.1 to 3.3.0: #37
