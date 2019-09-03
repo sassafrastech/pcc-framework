@@ -1,4 +1,3 @@
 {
-  "extends": ["plugin:@wordpress/eslint-plugin/recommended"],
-  "globals": {"wp": true}
+  "extends": ["plugin:@wordpress/eslint-plugin/recommended"]
 }
