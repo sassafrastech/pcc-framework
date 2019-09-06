@@ -3,9 +3,9 @@ Contributors: greatislander
 Tags: blocks, custom post types, taxonomies
 License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
-Requires at least: 5.2.2
-Tested up to: 5.2.2
-Stable tag: 1.1.0
+Requires at least: 5.2.3
+Tested up to: 5.2.3
+Stable tag: 1.2.1
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -40,6 +40,32 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 1.2.1 =
+
+**Patches**
+
+* Update readme and version
+
+= 1.2.0 =
+
+**Minor Changes**
+
+* Add development guidelines: #50
+* Bump @wordpress/eslint-plugin from 2.3.0 to 2.4.0: #52
+* Bump @wordpress/scripts from 3.3.0 to 3.4.0: #53
+* Bump johnbillion/extended-cpts from 4.2.6 to 4.3.0: #54
+* Bump eslint-utils from 1.3.1 to 1.4.2: #57
+* Bump @wordpress/scripts from 3.4.0 to 4.1.0: #62
+* Bump @wordpress/eslint-plugin from 2.4.0 to 3.0.0: #59
+
+**Patches**
+
+* Bump johnbillion/extended-cpts from 4.2.5 to 4.2.6: #51
+* Bump johnbillion/extended-cpts from 4.3.0 to 4.3.1: #55
+* Bump johnbillion/extended-cpts from 4.3.1 to 4.3.2: #56
+* Bump mixin-deep from 1.3.1 to 1.3.2: #58
+* Fix errors involving missing blocks: #63
+
 = 1.1.0 =
 * Add support for animated event banners: #49
 
