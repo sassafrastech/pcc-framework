@@ -1,4 +1,37 @@
 # Changelog #
+## 1.3.0 ##
+
+**Minor Changes**
+
+* Add LiveStream OEmbed support: #64
+* Add Recent Content block: #65
+
+## 1.2.1 ##
+
+**Patches**
+
+* Update readme and version
+
+## 1.2.0 ##
+
+**Minor Changes**
+
+* Add development guidelines: #50
+* Bump @wordpress/eslint-plugin from 2.3.0 to 2.4.0: #52
+* Bump @wordpress/scripts from 3.3.0 to 3.4.0: #53
+* Bump johnbillion/extended-cpts from 4.2.6 to 4.3.0: #54
+* Bump eslint-utils from 1.3.1 to 1.4.2: #57
+* Bump @wordpress/scripts from 3.4.0 to 4.1.0: #62
+* Bump @wordpress/eslint-plugin from 2.4.0 to 3.0.0: #59
+
+**Patches**
+
+* Bump johnbillion/extended-cpts from 4.2.5 to 4.2.6: #51
+* Bump johnbillion/extended-cpts from 4.3.0 to 4.3.1: #55
+* Bump johnbillion/extended-cpts from 4.3.1 to 4.3.2: #56
+* Bump mixin-deep from 1.3.1 to 1.3.2: #58
+* Fix errors involving missing blocks: #63
+
 ## 1.1.0 ##
 * Add support for animated event banners: #49
 
