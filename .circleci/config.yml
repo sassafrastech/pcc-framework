@@ -32,8 +32,8 @@ jobs:
           name: "Run asset tests"
           command: |
             yarn
-            yarn test
-            yarn build
+            npm run test
+            npm run build
   deploy_plugin_staging:
     docker:
       - image: circleci/php:7.3-node-browsers
@@ -46,7 +46,7 @@ jobs:
           name: "Build plugin"
           command: |
             yarn
-            yarn build
+            npm run build
             composer install --no-dev --optimize-autoloader
       - run: sudo apt-get install -y lftp
       - run: lftp -c 'set sftp:auto-confirm yes; set sftp:connect-program "ssh -p 22222 -a -x -i ~/.ssh/id_rsa"; connect sftp://'"$SFTP_USERNAME"':'"$SFTP_PASSWORD"'@'"$SFTP_HOSTNAME"' -e "mirror -v -R --exclude src/ --exclude bin/ --exclude tests/ --exclude .git/ --exclude .circleci/ --exclude node_modules/ ./ '"$WEB_ROOT_STAGING"'/wp-content/plugins/'"$PLUGIN_NAME"'; quit"'
@@ -62,7 +62,7 @@ jobs:
           name: "Build plugin"
           command: |
             yarn
-            yarn build
+            npm run build
             composer install --no-dev --optimize-autoloader
       - run: sudo apt-get install -y lftp
       - run: lftp -c 'set sftp:auto-confirm yes; set sftp:connect-program "ssh -p 22222 -a -x -i ~/.ssh/id_rsa"; connect sftp://'"$SFTP_USERNAME"':'"$SFTP_PASSWORD"'@'"$SFTP_HOSTNAME"' -e "mirror -v -R --exclude src/ --exclude bin/ --exclude tests/ --exclude .git/ --exclude .circleci/ --exclude node_modules/ ./ '"$WEB_ROOT_PRODUCTION"'/wp-content/plugins/'"$PLUGIN_NAME"'; quit"'
