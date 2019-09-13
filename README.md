@@ -10,6 +10,9 @@ This plugin adds the following custom components for the Platform Cooperativism 
 Blocks:
 
 * Child Pages
+* Participants Button
+* Program Button
+* Recent Content
 * Social Links
 
 Custom Post Types:
