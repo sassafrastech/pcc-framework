@@ -1,4 +1,13 @@
 # Changelog #
+## 1.5.0 ##
+
+**Minor Changes**
+
+* Adjust participant fields: #68
+* Add field to explicitly show people on people page: #69
+* Add new short title field: #70
+* Add locality and country to people profiles: #71
+
 ## 1.4.0 ##
 
 **Minor Changes**
