@@ -1,4 +1,10 @@
 # Changelog #
+## 1.6.0 ##
+
+**Minor Changes**
+
+* Add featured participants field (resolves #72): #73
+
 ## 1.5.0 ##
 
 **Minor Changes**
