@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.2.3
 Tested up to: 5.2.3
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -43,6 +43,13 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 1.7.0 =
+
+**Minor Changes**
+
+* Bump @wordpress/scripts from 4.1.0 to 5.0.0: #74
+* Remove featured participants: #75
+
 = 1.6.0 =
 
 **Minor Changes**

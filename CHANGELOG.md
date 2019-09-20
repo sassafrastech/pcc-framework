@@ -1,4 +1,11 @@
 # Changelog #
+## 1.7.0 ##
+
+**Minor Changes**
+
+* Bump @wordpress/scripts from 4.1.0 to 5.0.0: #74
+* Remove featured participants: #75
+
 ## 1.6.0 ##
 
 **Minor Changes**
