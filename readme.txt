@@ -3,8 +3,8 @@ Contributors: greatislander
 Tags: blocks, custom post types, taxonomies
 License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
-Requires at least: 5.2.3
-Tested up to: 5.2.3
+Requires at least: 5.3-beta3
+Tested up to: 5.3-beta3
 Stable tag: 1.7.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
@@ -43,6 +43,16 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 2.0.0 =
+
+**Major Changes**
+
+* Add WordPress 5.3 support (resolves #77): #79
+
+**Minor Changes**
+
+* Bump autoprefixer from 9.6.1 to 9.6.4: #78
+
 = 1.7.0 =
 
 **Minor Changes**

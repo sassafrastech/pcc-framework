@@ -1,4 +1,14 @@
 # Changelog #
+## 2.0.0 ##
+
+**Major Changes**
+
+* Add WordPress 5.3 support (resolves #77): #79
+
+**Minor Changes**
+
+* Bump autoprefixer from 9.6.1 to 9.6.4: #78
+
 ## 1.7.0 ##
 
 **Minor Changes**
