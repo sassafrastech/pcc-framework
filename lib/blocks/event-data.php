@@ -1,7 +1,4 @@
 <?php
-/**
- * @package         PCCFramework
- */
 
 namespace PCCFramework\Blocks\EventData;
 
