@@ -1,7 +1,7 @@
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-// const { date } = wp.date;
-const { /* DateTimePicker, */ TextareaControl, TextControl } = wp.components;
+const { date } = wp.date;
+const { DateTimePicker, TextareaControl, TextControl } = wp.components;
 
 registerBlockType( 'pcc/event-data', {
 	title: 'Event Data',
@@ -9,16 +9,16 @@ registerBlockType( 'pcc/event-data', {
 	category: 'common',
 
 	attributes: {
-		// start: {
-		//   type: 'integer',
-		//   source: 'meta',
-		//   meta: 'pcc_event_start',
-		// },
-		// end: {
-		//   type: 'integer',
-		//   source: 'meta',
-		//   meta: 'pcc_event_end',
-		// },
+		start: {
+			type: 'integer',
+			source: 'meta',
+			meta: 'pcc_event_start',
+		},
+		end: {
+			type: 'integer',
+			source: 'meta',
+			meta: 'pcc_event_end',
+		},
 		venueName: {
 			type: 'string',
 			source: 'meta',
@@ -37,13 +37,13 @@ registerBlockType( 'pcc/event-data', {
 	},
 
 	edit( { className, setAttributes, attributes } ) {
-		// function updateStart( start ) {
-		//   setAttributes( { start: date( 'U', start ) } );
-		// }
+		function updateStart( start ) {
+			setAttributes( { start: date( 'U', start ) } );
+		}
 
-		// function updateEnd( end ) {
-		//   setAttributes( { end: date( 'U', end ) } );
-		// }
+		function updateEnd( end ) {
+			setAttributes( { end: date( 'U', end ) } );
+		}
 
 		function updateVenueName( venueName ) {
 			setAttributes( { venueName } );
@@ -59,7 +59,7 @@ registerBlockType( 'pcc/event-data', {
 
 		return (
 			<div className={ className }>
-				{ /* <DateTimePicker
+				<DateTimePicker
 					label={ __( 'Start', 'pcc-framework' ) }
 					currentDate={ date( 'c', attributes.start ) }
 					onChange={ updateStart }
@@ -70,7 +70,7 @@ registerBlockType( 'pcc/event-data', {
 					currentDate={ date( 'c', attributes.end ) }
 					onChange={ updateEnd }
 					is12Hour={ false }
-				/> */ }
+				/>
 				<TextControl
 					label={ __( 'Venue', 'pcc-framework' ) }
 					value={ attributes.venueName }
