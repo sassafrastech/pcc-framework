@@ -1,4 +1,10 @@
 # Changelog #
+## 1.8.0 ##
+
+**Minor Changes**
+
+* Support newlines in venue name: #86
+
 ## 1.7.0 ##
 
 **Minor Changes**
