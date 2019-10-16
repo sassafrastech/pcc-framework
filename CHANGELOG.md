@@ -9,6 +9,12 @@
 
 * Bump autoprefixer from 9.6.1 to 9.6.4: #78
 
+## 1.8.0 ##
+
+**Minor Changes**
+
+* Support newlines in venue name: #86
+
 ## 1.7.0 ##
 
 **Minor Changes**
