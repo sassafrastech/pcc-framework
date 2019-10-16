@@ -110,7 +110,7 @@ function data()
     $cmb->add_field([
         'name' => __('Venue Name', 'pcc-framework'),
         'id'   => $prefix . 'venue',
-        'type' => 'text',
+        'type' => 'textarea_small',
         'description' =>
             __('The name of the event&rsquo;s principal venue.', 'pcc-framework'),
     ]);
