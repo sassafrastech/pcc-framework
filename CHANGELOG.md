@@ -9,6 +9,12 @@
 
 * Bump autoprefixer from 9.6.1 to 9.6.4: #78
 
+## 1.9.0 ##
+
+**Minor Changes**
+
+* Add featured participants: #90
+
 ## 1.8.0 ##
 
 **Minor Changes**

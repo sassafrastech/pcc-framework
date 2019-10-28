@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3-RC1
 Tested up to: 5.3-RC1
-Stable tag: 1.8.0
+Stable tag: 1.9.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -52,6 +52,12 @@ None yet.
 **Minor Changes**
 
 * Bump autoprefixer from 9.6.1 to 9.6.4: #78
+
+= 1.9.0 =
+
+**Minor Changes**
+
+* Add featured participants: #90
 
 = 1.8.0 =
 
