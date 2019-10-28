@@ -1,4 +1,10 @@
 # Changelog #
+## 1.9.0 ##
+
+**Minor Changes**
+
+* Add featured participants: #90
+
 ## 1.8.0 ##
 
 **Minor Changes**
