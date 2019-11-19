@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3
 Tested up to: 5.3
-Stable tag: 2.0.0
+Stable tag: 2.1.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -42,6 +42,18 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 2.1.0 =
+
+**Minor Changes**
+
+* Bump @wordpress/eslint-plugin from 3.1.0 to 3.2.0: #92
+* Bump @wordpress/scripts from 5.1.0 to 6.0.0: #93
+* Add support for People page: #94
+
+**Patches**
+
+* Bump autoprefixer from 9.7.1 to 9.7.2: #95
+
 = 2.0.0 =
 
 **Major Changes**

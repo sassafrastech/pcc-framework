@@ -1,4 +1,16 @@
 # Changelog #
+## 2.1.0 ##
+
+**Minor Changes**
+
+* Bump @wordpress/eslint-plugin from 3.1.0 to 3.2.0: #92
+* Bump @wordpress/scripts from 5.1.0 to 6.0.0: #93
+* Add support for People page: #94
+
+**Patches**
+
+* Bump autoprefixer from 9.7.1 to 9.7.2: #95
+
 ## 2.0.0 ##
 
 **Major Changes**
