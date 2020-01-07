@@ -9,6 +9,10 @@
 * Bump @wordpress/scripts from 6.0.0 to 6.1.1: #101
 * Add support for custom authors: #102
 
+**Patches**
+
+* Bump autoprefixer from 9.7.2 to 9.7.3: #97
+
 ## 2.1.0 ##
 
 **Minor Changes**
