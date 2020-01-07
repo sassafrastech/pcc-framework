@@ -9,7 +9,7 @@
  * Domain Path:     /languages
  * License:         BSD 3-Clause "New" License
  * License URI:     https://opensource.org/licenses/BSD-3-Clause
- * Version:         2.1.0
+ * Version:         2.2.0
  *
  * @package         PCCFramework
  */

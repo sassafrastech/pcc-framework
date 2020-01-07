@@ -1,4 +1,14 @@
 # Changelog #
+## 2.2.0 ##
+
+**Minor Changes**
+
+* Switch to GitHub Actions: #96
+* Use Sage 10 editor config: #98
+* Bump @wordpress/eslint-plugin from 3.2.0 to 3.3.0: #100
+* Bump @wordpress/scripts from 6.0.0 to 6.1.1: #101
+* Add support for custom authors: #102
+
 ## 2.1.0 ##
 
 **Minor Changes**

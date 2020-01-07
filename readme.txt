@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3
 Tested up to: 5.3
-Stable tag: 2.1.0
+Stable tag: 2.2.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -42,6 +42,16 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 2.2.0 =
+
+**Minor Changes**
+
+* Switch to GitHub Actions: #96
+* Use Sage 10 editor config: #98
+* Bump @wordpress/eslint-plugin from 3.2.0 to 3.3.0: #100
+* Bump @wordpress/scripts from 6.0.0 to 6.1.1: #101
+* Add support for custom authors: #102
+
 = 2.1.0 =
 
 **Minor Changes**
