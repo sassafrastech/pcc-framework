@@ -35,13 +35,13 @@ function data()
         'id'            => 'post_data',
         'title'         => __('Post Data', 'pcc-framework'),
         'object_types'  => ['post'],
-        'context'       => 'normal',
+        'context'       => 'side',
         'priority'      => 'high',
         'show_names'    => true,
     ]);
 
     $cmb->add_field([
-        'name' => __('Post Author', 'pcc-framework'),
+        'name' => __('Custom Post Author', 'pcc-framework'),
         'id'   => $prefix . 'authors',
         'type' => 'select',
         'show_option_none' => true,
