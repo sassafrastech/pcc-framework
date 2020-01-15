@@ -1,5 +1,6 @@
 .circleci
 .circleci
+.dependabot
 .distignore
 .editorconfig
 .eslintrc
