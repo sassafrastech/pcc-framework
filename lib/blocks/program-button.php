@@ -35,11 +35,11 @@ function render_callback($attributes)
         __('See the full program', 'pcc-framework');
 
     ob_start();
-?>
+    ?>
     <div class="wp-block-button">
         <a class="wp-block-button__link" href="<?= get_permalink() . 'program/' ?>"><?= $label ?></a>
     </div>
-<?php
+    <?php
     $output = ob_get_clean();
     return $output;
 }

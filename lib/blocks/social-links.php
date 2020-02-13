@@ -56,7 +56,7 @@ function render_callback($attributes)
         ],
     ];
     ob_start();
-?>
+    ?>
     <ul class="<?php echo $class; ?>">
     <?php foreach ($social as $network) { ?>
     <li class="social-links__item">
@@ -67,7 +67,7 @@ function render_callback($attributes)
     </li>
     <?php } ?>
 </ul>
-<?php
+    <?php
     $output = ob_get_clean();
     return $output;
 }

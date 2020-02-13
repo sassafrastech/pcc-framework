@@ -35,11 +35,11 @@ function render_callback($attributes)
         __('View all participants', 'pcc-framework');
 
     ob_start();
-?>
+    ?>
     <div class="wp-block-button">
         <a class="wp-block-button__link" href="<?= get_permalink() . 'participants/' ?>"><?= $label ?></a>
     </div>
-<?php
+    <?php
     $output = ob_get_clean();
     return $output;
 }

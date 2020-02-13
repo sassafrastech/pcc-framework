@@ -51,12 +51,12 @@ function render_callback($attributes)
         <li class="card <?= $recent->post->post_type ?> card--<?= $i ?>">
             <?php if ($i < 4 && has_post_thumbnail($recent->post)) { ?>
             <figure class="card__image">
-            <?php
-            if ($i === 1) {
-                echo get_the_post_thumbnail($recent->post, 'medium');
-            } else {
-                echo get_the_post_thumbnail($recent->post, 'post-thumbnail');
-            } ?>
+                <?php
+                if ($i === 1) {
+                    echo get_the_post_thumbnail($recent->post, 'medium');
+                } else {
+                    echo get_the_post_thumbnail($recent->post, 'post-thumbnail');
+                } ?>
             </figure>
             <?php } ?>
             <div class="card__details">

@@ -61,11 +61,11 @@ function render_callback($attributes)
         <?php while ($children->have_posts()) {
             $children->the_post(); ?>
         <li class="child-pages__child">
-    <?php if ($has_image && has_post_thumbnail($children->post)) { ?>
+            <?php if ($has_image && has_post_thumbnail($children->post)) { ?>
             <figure class="child-pages__image">
-            <?php echo get_the_post_thumbnail($children->post, 'social'); ?>
+                <?php echo get_the_post_thumbnail($children->post, 'social'); ?>
             </figure>
-    <?php } else { ?>
+            <?php } else { ?>
             <figure class="child-pages__image">
                 <div class="child-pages__placeholder-wrap">
                     <svg class="child-pages__placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.76 78.76">
@@ -93,7 +93,7 @@ function render_callback($attributes)
                     </svg>
                 </div>
             </figure>
-    <?php } ?>
+            <?php } ?>
             <div class="child-pages__text">
                 <?php if (!$has_excerpt) { ?>
                 <p><a href="<?php echo get_the_permalink($children->post) ?>"><?php echo get_the_title(); ?></a></p>
@@ -112,7 +112,7 @@ function render_callback($attributes)
         </li>
         <?php }
             wp_reset_postdata();
-    ?>
+        ?>
         </ul>
     <?php }
     $output .= ob_get_clean();
