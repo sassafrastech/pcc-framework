@@ -1,4 +1,11 @@
 # Changelog #
+## 2.2.1 ##
+
+**Bug Fixes**
+
+* Address mailing list bug in recent content block ([#113](https://github.com/platform-coop-toolkit/pcc-framework/issues/113)) ([f865839](https://github.com/platform-coop-toolkit/pcc-framework/commit/f8658394ae56b1f0c73f6e3b7f78b5fbe83b8783))
+* Address linting errors ([26072cb](https://github.com/platform-coop-toolkit/pcc-framework/commit/26072cbe2ea5429f0a1ed406b4f8db9ffa38da16))
+
 ## 2.2.0 ##
 
 **Minor Changes**

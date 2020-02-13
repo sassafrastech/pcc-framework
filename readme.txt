@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3
 Tested up to: 5.3
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -42,6 +42,13 @@ Custom Taxonomies:
 None yet.
 
 == Changelog ==
+= 2.2.1 =
+
+**Bug Fixes**
+
+* Address mailing list bug in recent content block ([#113](https://github.com/platform-coop-toolkit/pcc-framework/issues/113)) ([f865839](https://github.com/platform-coop-toolkit/pcc-framework/commit/f8658394ae56b1f0c73f6e3b7f78b5fbe83b8783))
+* Address linting errors ([26072cb](https://github.com/platform-coop-toolkit/pcc-framework/commit/26072cbe2ea5429f0a1ed406b4f8db9ffa38da16))
+
 = 2.2.0 =
 
 **Minor Changes**
