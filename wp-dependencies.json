@@ -7,6 +7,13 @@
     "optional": false
   },
   {
+    "name": "Disable Comments",
+    "host": "wordpress",
+    "slug": "disable-comments/wp-disable-comments.php",
+    "uri": "https://wordpress.org/plugins/disable-comments/",
+    "optional": false
+  },
+  {
     "name": "Intervention",
     "host": "github",
     "slug": "intervention/intervention.php",
