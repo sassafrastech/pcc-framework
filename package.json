@@ -15,6 +15,12 @@
   "repository": "https://github.com/platform-coop-toolkit/pcc-framework",
   "bugs": "https://github.com/platform-coop-toolkit/pcc-framework/issues",
   "main": "Gruntfile.js",
+  "dependencies": {
+    "@wordpress/components": "^9.3.0",
+    "@wordpress/edit-post": "^3.14.0",
+    "@wordpress/i18n": "^3.10.0",
+    "@wordpress/plugins": "^2.13.0"
+  },
   "devDependencies": {
     "@wordpress/eslint-plugin": "^3.4.1",
     "@wordpress/scripts": "^7.2.0",
@@ -57,11 +63,5 @@
   "wp-env": {
     "plugin-dir": "pcc-framework",
     "plugin-name": "PCC Framework"
-  },
-  "dependencies": {
-    "@wordpress/components": "^9.3.0",
-    "@wordpress/edit-post": "^3.14.0",
-    "@wordpress/i18n": "^3.10.0",
-    "@wordpress/plugins": "^2.13.0"
   }
 }
