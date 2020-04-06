@@ -15,7 +15,7 @@ jobs:
     - name: Composer install and lint
       run: |
         composer install
-        composer standards
+        composer lint
     - name: Cache node modules
       uses: actions/cache@v1
       with:
