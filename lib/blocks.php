@@ -19,3 +19,13 @@ function register_block_assets()
         true
     );
 }
+
+/**
+ * Enqueue block assets.
+ *
+ * @return null
+ */
+function enqueue_block_assets()
+{
+    wp_enqueue_script('platform-coop-blocks-js');
+}

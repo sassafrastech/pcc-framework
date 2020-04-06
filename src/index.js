@@ -7,3 +7,4 @@ import './blocks/program-button/index.js';
 import './blocks/recent-content/index.js';
 import './blocks/social-links/index.js';
 import './editor/index.js';
+import './sidebar/index.js';

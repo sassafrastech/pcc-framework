@@ -57,5 +57,11 @@
   "wp-env": {
     "plugin-dir": "pcc-framework",
     "plugin-name": "PCC Framework"
+  },
+  "dependencies": {
+    "@wordpress/components": "^9.3.0",
+    "@wordpress/edit-post": "^3.14.0",
+    "@wordpress/i18n": "^3.10.0",
+    "@wordpress/plugins": "^2.13.0"
   }
 }

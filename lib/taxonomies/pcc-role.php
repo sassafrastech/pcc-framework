@@ -43,4 +43,3 @@ function updated_messages($messages)
 
     return $messages;
 }
-// add_filter( 'term_updated_messages', 'pcc_role_updated_messages' );

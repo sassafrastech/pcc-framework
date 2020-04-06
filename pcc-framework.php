@@ -51,7 +51,8 @@ foreach ([
     'attachment',
     'event',
     'person',
-    'post'
+    'post',
+    'story'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
     if ($posttype !== 'attachment') {
@@ -66,7 +67,9 @@ foreach ([
  * Load and register taxonomies.
  */
 foreach ([
+    'region',
     'role',
+    'sector',
 ] as $taxonomy) {
     require_once dirname(__FILE__) . "/lib/taxonomies/pcc-$taxonomy.php";
     add_action('init', '\\PCCFramework\\Taxonomies\\' . ucfirst($taxonomy) . '\\init');
@@ -101,6 +104,7 @@ if (is_admin()) {
     require_once dirname(__FILE__) . '/lib/settings.php';
 
     add_action('admin_enqueue_scripts', '\\PCCFramework\\Admin\\enqueue_assets');
+    add_action('enqueue_block_editor_assets', '\\PCCFramework\\Blocks\\enqueue_block_assets');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\sponsors');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Person\\data');
