@@ -41,10 +41,11 @@
     }
   },
   "scripts": {
-    "standards": "vendor/bin/phpcs . --extensions=php --standard=phpcs.xml.dist --ignore=build,node_modules,tests,vendor,wordpress",
+    "lint": "vendor/bin/phpcs . --extensions=php --standard=phpcs.xml.dist --ignore=build,node_modules,tests,vendor,wordpress",
+    "lint-fix": "vendor/bin/phpcbf . --extensions=php --standard=phpcs.xml.dist --ignore=build,node_modules,tests,vendor,wordpress",
     "test": [
       "vendor/bin/phpunit",
-      "@standards"
+      "@lint"
     ]
   }
 }
