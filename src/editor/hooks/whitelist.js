@@ -9,10 +9,12 @@ import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
  *
  * @param {Object} blocks
  */
-const whitelistBlocks = ( blocks ) => domReady( () => {
-	getBlockTypes().forEach( ( { name } ) => (
-		blocks.indexOf( name ) === -1 && unregisterBlockType( name )
-	) );
-} );
+const whitelistBlocks = ( blocks ) =>
+	domReady( () => {
+		getBlockTypes().forEach(
+			( { name } ) =>
+				blocks.indexOf( name ) === -1 && unregisterBlockType( name )
+		);
+	} );
 
 export { whitelistBlocks };
