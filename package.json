@@ -22,7 +22,8 @@
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-readme-to-markdown": "^0.2.1"
+    "gulp-readme-to-markdown": "^0.2.1",
+    "prettier": "npm:wp-prettier@^1.19.1"
   },
   "scripts": {
     "env": "wp-scripts env",
