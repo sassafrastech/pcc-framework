@@ -3,7 +3,7 @@
 namespace PCCFramework\Utils;
 
 if (! defined('PCC_FRAMEWORK_VERSION')) {
-    define('PCC_FRAMEWORK_VERSION', '0.7.0');
+    define('PCC_FRAMEWORK_VERSION', '2.2.1');
 }
 
 /**
