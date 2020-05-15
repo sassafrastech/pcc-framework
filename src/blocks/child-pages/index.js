@@ -23,16 +23,16 @@ registerBlockType( 'pcc/child-pages', {
 	styles: [
 		{
 			name: 'card',
-			label: __( 'Card' ),
+			label: __( 'Card', 'pcc-framework' ),
 		},
 		{
 			name: 'card-with-excerpt',
-			label: __( 'Card with Excerpt' ),
+			label: __( 'Card with Excerpt', 'pcc-framework' ),
 			isDefault: true,
 		},
 		{
 			name: 'text-only',
-			label: __( 'Text Only' ),
+			label: __( 'Text Only', 'pcc-framework' ),
 		},
 	],
 	edit: ( props ) => {
@@ -41,9 +41,14 @@ registerBlockType( 'pcc/child-pages', {
 		let blockUI;
 
 		if ( isSelected ) {
-			blockUI = <SelectPage { ... { ...props } } />;
+			blockUI = <SelectPage { ...{ ...props } } />;
 		} else {
-			blockUI = <ServerSideRender block="pcc/child-pages" attributes={ attributes } />;
+			blockUI = (
+				<ServerSideRender
+					block="pcc/child-pages"
+					attributes={ attributes }
+				/>
+			);
 		}
 
 		return blockUI;

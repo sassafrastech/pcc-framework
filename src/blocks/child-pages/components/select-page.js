@@ -7,7 +7,10 @@ const { __ } = wp.i18n;
 const { withSelect } = wp.data;
 const { SelectControl, Placeholder, Spinner } = wp.components;
 
-const pageDefault = { value: '0', label: __( '-- Select Page --' ) };
+const pageDefault = {
+	value: '0',
+	label: __( '-- Select Page --', 'pcc-framework' ),
+};
 
 const SelectPage = ( { pages, attributes, setAttributes, className } ) => {
 	const { parent } = attributes;
@@ -16,14 +19,18 @@ const SelectPage = ( { pages, attributes, setAttributes, className } ) => {
 		let pageOptions = [];
 
 		if ( ! isUndefined( pages ) ) {
-			pageOptions = pages.map(
-				( { id, title: { rendered: title } } ) => {
-					return {
-						value: id,
-						label: title === '' ? `${ id } : ${ __( 'No page title' ) }` : title,
-					};
-				}
-			);
+			pageOptions = pages.map( ( { id, title: { rendered: title } } ) => {
+				return {
+					value: id,
+					label:
+						title === ''
+							? `${ id } : ${ __(
+									'No page title',
+									'pcc-framework'
+							  ) }`
+							: title,
+				};
+			} );
 		}
 		pageOptions.unshift( pageDefault );
 
@@ -37,18 +44,25 @@ const SelectPage = ( { pages, attributes, setAttributes, className } ) => {
 	let componentUI;
 
 	if ( ! pages ) {
-		componentUI = <Placeholder><Spinner /></Placeholder>;
+		componentUI = (
+			<Placeholder>
+				<Spinner />
+			</Placeholder>
+		);
 	} else if ( pages && pages.length === 0 ) {
 		componentUI = (
 			<div className={ className }>
-				<p><em>{ __( 'No pages found.' ) }</em></p>;
+				<p>
+					<em>{ __( 'No pages found.', 'pcc-framework' ) }</em>
+				</p>
+				;
 			</div>
 		);
 	} else {
 		componentUI = (
 			<div className={ className }>
 				<SelectControl
-					label={ __( 'Parent Page' ) }
+					label={ __( 'Parent Page', 'pcc-framework' ) }
 					value={ parent }
 					options={ getPageOptions() }
 					onChange={ setParentIdTo }
@@ -62,6 +76,9 @@ const SelectPage = ( { pages, attributes, setAttributes, className } ) => {
 
 export default withSelect( ( select ) => {
 	return {
-		pages: select( 'core' ).getEntityRecords( 'postType', 'page', { per_page: -1, orderby: 'menu_order' } ),
+		pages: select( 'core' ).getEntityRecords( 'postType', 'page', {
+			per_page: -1,
+			orderby: 'menu_order',
+		} ),
 	};
 } )( SelectPage );

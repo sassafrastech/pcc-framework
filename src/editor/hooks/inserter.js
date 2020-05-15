@@ -11,9 +11,9 @@ import { addFilter } from '@wordpress/hooks';
  */
 const filterCategories = ( newCategory, exceptions = [] ) => {
 	addFilter( 'blocks.registerBlockType', 'sage/inserter', ( props ) => {
-		props.category = exceptions.includes( props.category ) ?
-			props.category :
-			props.category = newCategory;
+		props.category = exceptions.includes( props.category )
+			? props.category
+			: ( props.category = newCategory );
 
 		return props;
 	} );

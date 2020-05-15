@@ -8,9 +8,11 @@ import { registerBlockStyle, unregisterBlockStyle } from '@wordpress/blocks';
  * @param {Object} items keyed by block; styles to be registered.
  */
 const registerBlockStyles = ( items ) => {
-	domReady( () => items.forEach( ( { block, styles } ) => (
-		styles.forEach( ( style ) => registerBlockStyle( block, style ) )
-	) ) );
+	domReady( () =>
+		items.forEach( ( { block, styles } ) =>
+			styles.forEach( ( style ) => registerBlockStyle( block, style ) )
+		)
+	);
 };
 
 /**
@@ -19,12 +21,11 @@ const registerBlockStyles = ( items ) => {
  * @param {Object} items keyed by block; styles to be unregistered.
  */
 const unregisterBlockStyles = ( items ) => {
-	domReady( () => items.forEach( ( { block, styles } ) => (
-		styles.forEach( ( style ) => unregisterBlockStyle( block, style ) )
-	) ) );
+	domReady( () =>
+		items.forEach( ( { block, styles } ) =>
+			styles.forEach( ( style ) => unregisterBlockStyle( block, style ) )
+		)
+	);
 };
 
-export {
-	registerBlockStyles,
-	unregisterBlockStyles,
-};
+export { registerBlockStyles, unregisterBlockStyles };

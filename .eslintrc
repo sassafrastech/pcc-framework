@@ -1,3 +1,6 @@
 {
-  "extends": ["plugin:@wordpress/eslint-plugin/recommended"]
+  "extends": ["plugin:@wordpress/eslint-plugin/recommended"],
+  "rules": {
+    "@wordpress/i18n-text-domain": [2, {"allowedTextDomain": "pcc-framework"}]
+  }
 }

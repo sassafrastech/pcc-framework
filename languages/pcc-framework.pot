@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-06T15:16:06+00:00\n"
+"POT-Creation-Date: 2020-05-11T15:19:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: pcc-framework\n"
@@ -68,7 +68,7 @@ msgid "Platform Cooperativism – Discussion & Linkshare"
 msgstr ""
 
 #: lib/blocks/social-links.php:53
-#: src/blocks/social-links/index.js:16
+#: src/blocks/social-links/index.js:19
 msgid "Platform Co-op Development Kit"
 msgstr ""
 
@@ -433,16 +433,62 @@ msgstr ""
 msgid "Autoloader not found."
 msgstr ""
 
-#: src/blocks/participants-button/index.js:34
-#: src/blocks/program-button/index.js:34
+#: src/blocks/child-pages/components/select-page.js:12
+msgid "-- Select Page --"
+msgstr ""
+
+#: src/blocks/child-pages/components/select-page.js:27
+msgid "No page title"
+msgstr ""
+
+#: src/blocks/child-pages/components/select-page.js:56
+msgid "No pages found."
+msgstr ""
+
+#: src/blocks/child-pages/components/select-page.js:65
+msgid "Parent Page"
+msgstr ""
+
+#: src/blocks/child-pages/index.js:26
+msgid "Card"
+msgstr ""
+
+#: src/blocks/child-pages/index.js:30
+msgid "Card with Excerpt"
+msgstr ""
+
+#: src/blocks/child-pages/index.js:35
+msgid "Text Only"
+msgstr ""
+
+#: src/blocks/participants-button/index.js:19
+#: src/blocks/program-button/index.js:19
+#: src/blocks/social-links/index.js:26
+msgid "Default"
+msgstr ""
+
+#: src/blocks/participants-button/index.js:38
+#: src/blocks/program-button/index.js:36
 msgid "Label"
 msgstr ""
 
-#: src/blocks/social-links/index.js:63
+#: src/blocks/recent-content/index.js:6
+msgid "Recent Content"
+msgstr ""
+
+#: src/blocks/recent-content/index.js:7
+msgid "Generate a grid of recent content from various sources"
+msgstr ""
+
+#: src/blocks/social-links/index.js:31
+msgid "Icon Only"
+msgstr ""
+
+#: src/blocks/social-links/index.js:98
 msgid "Facebook Label"
 msgstr ""
 
-#: src/blocks/social-links/index.js:68
+#: src/blocks/social-links/index.js:103
 msgid "Twitter Label"
 msgstr ""
 

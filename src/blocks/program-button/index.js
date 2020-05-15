@@ -16,31 +16,37 @@ const programButton = registerBlockType( 'pcc/program-button', {
 	styles: [
 		{
 			name: 'default',
-			label: __( 'Default' ),
+			label: __( 'Default', 'pcc-framework' ),
 			isDefault: true,
 		},
 	],
 	edit: ( { attributes, setAttributes, isSelected } ) => {
 		const onChangeLabel = ( value ) => {
-			setAttributes( { label: value ? value : programButton.attributes.label.default } );
+			setAttributes( {
+				label: value ? value : programButton.attributes.label.default,
+			} );
 		};
 
 		let blockUI;
 
 		if ( isSelected ) {
-			blockUI =
+			blockUI = (
 				<div className="wp-block-button">
 					<TextControl
 						label={ __( 'Label', 'pcc-framework' ) }
 						value={ attributes.label }
 						onChange={ onChangeLabel }
 					/>
-				</div>;
+				</div>
+			);
 		} else {
-			blockUI =
+			blockUI = (
 				<div className="wp-block-button">
-					<a className="wp-block-button__link" href="program">{ attributes.label }</a>
-				</div>;
+					<a className="wp-block-button__link" href="program">
+						{ attributes.label }
+					</a>
+				</div>
+			);
 		}
 
 		return blockUI;
