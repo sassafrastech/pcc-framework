@@ -51,7 +51,8 @@ foreach ([
     'attachment',
     'event',
     'person',
-    'post'
+    'post',
+    'project'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
     if ($posttype !== 'attachment') {

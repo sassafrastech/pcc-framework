@@ -27,3 +27,13 @@ function init()
         ]
     );
 }
+
+/**
+ * Registers meta fields for the `pcc-project` post type.
+ *
+ * @return null
+ */
+function register_meta()
+{
+    // TODO.
+}
