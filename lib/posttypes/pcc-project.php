@@ -23,7 +23,7 @@ function init()
         [
             'singular' => __('Project', 'pcc-framework'),
             'plural' => __('Projects', 'pcc-framework'),
-            'slug' => 'project'
+            'slug' => 'projects',
         ]
     );
 }
