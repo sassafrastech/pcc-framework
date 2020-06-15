@@ -1,6 +1,6 @@
 {
   "name": "@platform-coop-toolkit/pcc-framework",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Utilities, custom post types and blocks for the Platform Cooperativism Consortium website.",
   "author": "OCAD University",
   "license": "BSD-3-Clause",
@@ -16,8 +16,8 @@
   "bugs": "https://github.com/platform-coop-toolkit/pcc-framework/issues",
   "main": "Gruntfile.js",
   "devDependencies": {
-    "@wordpress/eslint-plugin": "^6.0.0",
-    "@wordpress/scripts": "^9.1.0",
+    "@wordpress/eslint-plugin": "^6.1.0",
+    "@wordpress/scripts": "^10.0.0",
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
