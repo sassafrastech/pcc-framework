@@ -23,7 +23,17 @@ function init()
         [
             'singular' => __('Project', 'pcc-framework'),
             'plural' => __('Projects', 'pcc-framework'),
-            'slug' => 'project'
+            'slug' => 'projects',
         ]
     );
+}
+
+/**
+ * Registers meta fields for the `pcc-project` post type.
+ *
+ * @return null
+ */
+function register_meta()
+{
+    // TODO.
 }
