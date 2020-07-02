@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-07-02T16:06:48+00:00\n"
+"POT-Creation-Date: 2020-07-02T16:13:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: pcc-framework\n"
@@ -361,66 +361,74 @@ msgstr ""
 msgid "The author of this post (use this if they do not have a WordPress account)."
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:28
-#: lib/posttypes/pcc-story.php:152
+#: lib/posttypes/pcc-story.php:29
+#: lib/posttypes/pcc-story.php:165
 #: lib/taxonomies/pcc-sector.php:19
 msgid "Sector"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:32
-#: lib/posttypes/pcc-story.php:142
+#: lib/posttypes/pcc-story.php:33
+#: lib/posttypes/pcc-story.php:151
 #: lib/taxonomies/pcc-region.php:20
 msgid "Regions"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:36
-#: lib/posttypes/pcc-story.php:132
+#: lib/posttypes/pcc-story.php:37
+#: lib/posttypes/pcc-story.php:137
 #: lib/taxonomies/pcc-organization.php:19
 msgid "Organization"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:40
+#: lib/posttypes/pcc-story.php:41
 msgid "Tags"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:47
+#: lib/posttypes/pcc-story.php:48
 msgid "Story"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:48
+#: lib/posttypes/pcc-story.php:49
 msgid "Stories"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:105
+#: lib/posttypes/pcc-story.php:106
 msgid "Story Details"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:113
+#: lib/posttypes/pcc-story.php:114
 msgid "Story Video Link"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:118
-msgid "Link to the video (i.e. on Youtube)."
+#: lib/posttypes/pcc-story.php:119
+msgid "Link to the video (i.e. on YouTube)."
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:122
+#: lib/posttypes/pcc-story.php:123
 msgid "Storyteller"
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:124
-msgid "Name of the person who is telling this story. <a href=\"%s\">Add a new person</a> if they do not appear on the list."
+#: lib/posttypes/pcc-story.php:126
+msgid ""
+"Name of the person who is telling this story.\n"
+"                    <a href=\"%s\">Add a new person</a> if they do not appear on the list."
 msgstr ""
 
-#: lib/posttypes/pcc-story.php:134
-msgid "Primary organization featured in this story. <a href=\"%s\">Add a new organization</a> if it does not appear on the list."
-msgstr ""
-
-#: lib/posttypes/pcc-story.php:144
-msgid "Relevant geographic region(s) associated with this story. <a href=\"%s\">Add a new region</a> if it does not appear on the list."
+#: lib/posttypes/pcc-story.php:140
+msgid ""
+"Primary organization featured in this story.\n"
+"                <a href=\"%s\">Add a new organization</a> if it does not appear on the list."
 msgstr ""
 
 #: lib/posttypes/pcc-story.php:154
-msgid "Industry or area of work / service. <a href=\"%s\">Add a new sector</a> if it does not appear on the list."
+msgid ""
+"Relevant geographic region(s) associated with this story.\n"
+"                <a href=\"%s\">Add a new region</a> if it does not appear on the list."
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:168
+msgid ""
+"Industry or area of work / service.\n"
+"                <a href=\"%s\">Add a new sector</a> if it does not appear on the list."
 msgstr ""
 
 #: lib/settings.php:12
