@@ -15,6 +15,12 @@
   "repository": "https://github.com/platform-coop-toolkit/pcc-framework",
   "bugs": "https://github.com/platform-coop-toolkit/pcc-framework/issues",
   "main": "Gruntfile.js",
+  "dependencies": {
+    "@wordpress/components": "^9.3.0",
+    "@wordpress/edit-post": "^3.14.0",
+    "@wordpress/i18n": "^3.10.0",
+    "@wordpress/plugins": "^2.13.0"
+  },
   "devDependencies": {
     "@wordpress/eslint-plugin": "^6.1.0",
     "@wordpress/scripts": "^10.0.0",
