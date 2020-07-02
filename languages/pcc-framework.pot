@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-06-10T03:02:50+00:00\n"
+"POT-Creation-Date: 2020-07-02T16:06:48+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: pcc-framework\n"
@@ -265,7 +265,7 @@ msgid "Add/Upload Logo"
 msgstr ""
 
 #: lib/posttypes/pcc-person.php:21
-#: lib/taxonomies/pcc-role.php:18
+#: lib/taxonomies/pcc-role.php:19
 msgid "Role"
 msgstr ""
 
@@ -361,6 +361,68 @@ msgstr ""
 msgid "The author of this post (use this if they do not have a WordPress account)."
 msgstr ""
 
+#: lib/posttypes/pcc-story.php:28
+#: lib/posttypes/pcc-story.php:152
+#: lib/taxonomies/pcc-sector.php:19
+msgid "Sector"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:32
+#: lib/posttypes/pcc-story.php:142
+#: lib/taxonomies/pcc-region.php:20
+msgid "Regions"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:36
+#: lib/posttypes/pcc-story.php:132
+#: lib/taxonomies/pcc-organization.php:19
+msgid "Organization"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:40
+msgid "Tags"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:47
+msgid "Story"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:48
+msgid "Stories"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:105
+msgid "Story Details"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:113
+msgid "Story Video Link"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:118
+msgid "Link to the video (i.e. on Youtube)."
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:122
+msgid "Storyteller"
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:124
+msgid "Name of the person who is telling this story. <a href=\"%s\">Add a new person</a> if they do not appear on the list."
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:134
+msgid "Primary organization featured in this story. <a href=\"%s\">Add a new organization</a> if it does not appear on the list."
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:144
+msgid "Relevant geographic region(s) associated with this story. <a href=\"%s\">Add a new region</a> if it does not appear on the list."
+msgstr ""
+
+#: lib/posttypes/pcc-story.php:154
+msgid "Industry or area of work / service. <a href=\"%s\">Add a new sector</a> if it does not appear on the list."
+msgstr ""
+
 #: lib/settings.php:12
 msgid "Site Configuration"
 msgstr ""
@@ -393,36 +455,129 @@ msgstr ""
 msgid "Link to external newsletter signup form (used in site footer and some page templates)."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:19
-msgid "Roles"
+#: lib/taxonomies/pcc-organization.php:20
+msgid "Organizations"
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:21
+msgid "organization"
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:37
+msgid "Organization added."
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:38
+msgid "Organization deleted."
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:39
+msgid "Organization updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:40
+msgid "Organization not added."
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:41
+msgid "Organization not updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-organization.php:42
+msgid "Organizations deleted."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:19
+#: lib/taxonomies/pcc-region.php:21
+msgid "Region"
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:37
+msgid "Region added."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:38
+msgid "Region deleted."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:39
+msgid "Region updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:40
+msgid "Region not added."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:41
+msgid "Region not updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-region.php:42
+msgid "Regions deleted."
 msgstr ""
 
 #: lib/taxonomies/pcc-role.php:20
+msgid "Roles"
+msgstr ""
+
+#: lib/taxonomies/pcc-role.php:21
 msgid "role"
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:36
+#: lib/taxonomies/pcc-role.php:37
 msgid "Role added."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:37
+#: lib/taxonomies/pcc-role.php:38
 msgid "Role deleted."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:38
+#: lib/taxonomies/pcc-role.php:39
 msgid "Role updated."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:39
+#: lib/taxonomies/pcc-role.php:40
 msgid "Role not added."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:40
+#: lib/taxonomies/pcc-role.php:41
 msgid "Role not updated."
 msgstr ""
 
-#: lib/taxonomies/pcc-role.php:41
+#: lib/taxonomies/pcc-role.php:42
 msgid "Roles deleted."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:20
+msgid "Sectors"
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:21
+msgid "sector"
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:37
+msgid "Sector added."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:38
+msgid "Sector deleted."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:39
+msgid "Sector updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:40
+msgid "Sector not added."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:41
+msgid "Sector not updated."
+msgstr ""
+
+#: lib/taxonomies/pcc-sector.php:42
+msgid "Sectors deleted."
 msgstr ""
 
 #: pcc-framework.php:32
