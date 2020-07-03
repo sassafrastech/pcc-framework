@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3
 Tested up to: 5.3
-Stable tag: 2.2.2
+Stable tag: 2.3.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -55,7 +55,14 @@ The following plugins are recommended:
 None yet.
 
 == Changelog ==
+= 2.3.0 =
+
+**Minor Changes**
+
+* feat: Add authoring feature for Community Stories: [#164](https://github.com/platform-coop-toolkit/pcc-framework/pull/164)
+
 = 2.2.2 =
+
 **Bug Fixes**
 
 * Remove dependency installer ([40be36b](https://github.com/platform-coop-toolkit/pcc-framework/commit/40be36bcfaf2c613e44acbfee64becdfb870d0bc))
