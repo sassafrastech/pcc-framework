@@ -18,7 +18,7 @@ function init()
             'hierarchical' => true,
             'menu_icon' => 'dashicons-analytics',
             'menu_position' => 24,
-            'show_in_rest' => false,
+            'show_in_rest' => true,
             'publicly_queryable' => false,
             'supports' => ['title', 'editor', 'page-attributes', 'custom-fields', 'thumbnail'],
             'taxonomies' => ['post_tag'],
