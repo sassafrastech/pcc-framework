@@ -1,4 +1,10 @@
 # Changelog #
+## 2.4.0 ##
+
+**Minor Changes**
+
+* feat: add project post type and settings: [#165](https://github.com/platform-coop-toolkit/pcc-framework/pull/165)
+
 ## 2.3.0 ##
 
 **Minor Changes**
