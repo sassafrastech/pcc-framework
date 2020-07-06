@@ -52,6 +52,7 @@ foreach ([
     'event',
     'person',
     'post',
+    'project',
     'story'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
@@ -110,6 +111,7 @@ if (is_admin()) {
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\sponsors');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Person\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Post\\data');
+    add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Project\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Story\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\page');
     add_filter('attachment_fields_to_edit', '\\PCCFramework\\PostTypes\\Attachment\\data', 10, 2);
