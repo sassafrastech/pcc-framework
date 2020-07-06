@@ -7,3 +7,8 @@
 #dashboard_right_now li > span.cpt-pcc-person-count::before {
 	content: "\f12e";
 }
+
+#dashboard_right_now li a.cpt-pcc-voice-count::before,
+#dashboard_right_now li > span.cpt-pcc-voice-count::before {
+	content: "\f482";
+}

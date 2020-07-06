@@ -1,5 +1,12 @@
 # Changelog #
+## 2.3.0 ##
+
+**Minor Changes**
+
+* feat: Add authoring feature for Community Stories: [#164](https://github.com/platform-coop-toolkit/pcc-framework/pull/164)
+
 ## 2.2.2 ##
+
 **Bug Fixes**
 
 * Remove dependency installer ([40be36b](https://github.com/platform-coop-toolkit/pcc-framework/commit/40be36bcfaf2c613e44acbfee64becdfb870d0bc))
