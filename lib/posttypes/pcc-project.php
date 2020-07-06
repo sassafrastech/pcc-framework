@@ -18,7 +18,8 @@ function init()
             'hierarchical' => true,
             'menu_icon' => 'dashicons-analytics',
             'menu_position' => 24,
-            'show_in_rest' => true,
+            'show_in_rest' => false,
+            'publicly_queryable' => false,
             'supports' => ['title', 'editor', 'page-attributes', 'custom-fields', 'thumbnail'],
             'taxonomies' => ['post_tag'],
         ],
@@ -37,7 +38,6 @@ function init()
  */
 function register_meta()
 {
-    // TODO.
     register_post_meta('pcc-project', 'pcc_project_test', [
         'show_in_rest' => true,
         'single' => true,

@@ -52,7 +52,7 @@ foreach ([
     'event',
     'person',
     'post',
-    'project'
+    'project',
     'story'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
