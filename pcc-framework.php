@@ -9,7 +9,7 @@
  * Domain Path:     /languages
  * License:         BSD 3-Clause "New" License
  * License URI:     https://opensource.org/licenses/BSD-3-Clause
- * Version:         2.2.2
+ * Version:         2.3.0
  *
  * @package         PCCFramework
  */
@@ -53,6 +53,7 @@ foreach ([
     'person',
     'post',
     'project'
+    'story'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
     if ($posttype !== 'attachment') {
@@ -67,7 +68,10 @@ foreach ([
  * Load and register taxonomies.
  */
 foreach ([
+    'region',
     'role',
+    'sector',
+    'organization',
 ] as $taxonomy) {
     require_once dirname(__FILE__) . "/lib/taxonomies/pcc-$taxonomy.php";
     add_action('init', '\\PCCFramework\\Taxonomies\\' . ucfirst($taxonomy) . '\\init');
@@ -102,11 +106,13 @@ if (is_admin()) {
     require_once dirname(__FILE__) . '/lib/settings.php';
 
     add_action('admin_enqueue_scripts', '\\PCCFramework\\Admin\\enqueue_assets');
+    add_action('enqueue_block_editor_assets', '\\PCCFramework\\Blocks\\enqueue_block_assets');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\sponsors');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Person\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Post\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Project\\data');
+    add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Story\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\page');
     add_filter('attachment_fields_to_edit', '\\PCCFramework\\PostTypes\\Attachment\\data', 10, 2);
     add_action('edit_attachment', '\\PCCFramework\\PostTypes\\Attachment\\save');
