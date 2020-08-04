@@ -113,7 +113,8 @@ if (is_admin()) {
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Post\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Project\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Story\\data');
-    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\page');
+    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\configuration');
+    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\localization');
     add_filter('attachment_fields_to_edit', '\\PCCFramework\\PostTypes\\Attachment\\data', 10, 2);
     add_action('edit_attachment', '\\PCCFramework\\PostTypes\\Attachment\\save');
 }
