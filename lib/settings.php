@@ -28,13 +28,6 @@ function configuration()
             'https://go.newschool.edu/s/1811/17/interior.aspx?sid=1811&gid=2&pgid=537&cid=1698&dids=34&bledit=1',
     ]);
     $cmb->add_field([
-        'name' => __('Newsletter Signup Text', 'pcc-framework'),
-        'desc' => __('Prompt for newsletter signup call to action (use in site footer).', 'pcc-framework'),
-        'id' => 'signup_text',
-        'type' => 'textarea_small',
-        'default' => 'Once a month, we’ll email you with the latest news and activity in the community.',
-    ]);
-    $cmb->add_field([
         'name' => __('Newsletter Signup Link', 'pcc-framework'),
         'desc' =>
             __(
@@ -43,7 +36,7 @@ function configuration()
             ),
         'id' => 'signup_link',
         'type' => 'text_url',
-        'default' => 'https://lists.riseup.net/www/info/platformcoop-newsletter',
+        'default' => 'https://mailchi.mp/platform/coop',
     ]);
 }
 
