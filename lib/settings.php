@@ -58,6 +58,7 @@ function localization()
         'menu_title' => __('Localization', 'pcc-framework'),
         'object_types' => ['options-page'],
         'option_key' => 'platformcoop_localization',
+        'position' => 95,
         'icon_url'   => 'dashicons-admin-site-alt3',
         'capability' => 'manage_options',
     ]);
