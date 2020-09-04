@@ -9,7 +9,7 @@
  * Domain Path:     /languages
  * License:         BSD 3-Clause "New" License
  * License URI:     https://opensource.org/licenses/BSD-3-Clause
- * Version:         2.3.0
+ * Version:         2.4.0
  *
  * @package         PCCFramework
  */
@@ -52,6 +52,7 @@ foreach ([
     'event',
     'person',
     'post',
+    'project',
     'story'
 ] as $posttype) {
     require_once dirname(__FILE__) . "/lib/posttypes/pcc-$posttype.php";
@@ -110,8 +111,10 @@ if (is_admin()) {
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Event\\sponsors');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Person\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Post\\data');
+    add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Project\\data');
     add_action('cmb2_admin_init', '\\PCCFramework\\PostTypes\\Story\\data');
-    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\page');
+    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\configuration');
+    add_action('cmb2_admin_init', '\\PCCFramework\\Settings\\localization');
     add_filter('attachment_fields_to_edit', '\\PCCFramework\\PostTypes\\Attachment\\data', 10, 2);
     add_action('edit_attachment', '\\PCCFramework\\PostTypes\\Attachment\\save');
 }

@@ -5,7 +5,7 @@ License: BSD 3-Clause "New" License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 Requires at least: 5.3
 Tested up to: 5.3
-Stable tag: 2.3.0
+Stable tag: 2.4.0
 
 [![License](https://badgen.net/github/license/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/blob/master/LICENSE.md) [![Status](https://badgen.net/github/status/platform-coop-toolkit/pcc-framework)](https://circleci.com/gh/platform-coop-toolkit/pcc-framework/tree/master) [![GitHub Release](https://badgen.net/github/release/platform-coop-toolkit/pcc-framework)](https://github.com/platform-coop-toolkit/pcc-framework/releases/latest)
 
@@ -55,6 +55,12 @@ The following plugins are recommended:
 None yet.
 
 == Changelog ==
+= 2.4.0 =
+
+**Minor Changes**
+
+* feat: add project post type and settings: [#165](https://github.com/platform-coop-toolkit/pcc-framework/pull/165)
+
 = 2.3.0 =
 
 **Minor Changes**

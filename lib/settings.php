@@ -5,7 +5,7 @@ namespace PCCFramework\Settings;
 /**
  * Register Configuration settings page and meta fields.
  */
-function page()
+function configuration()
 {
     $cmb = new_cmb2_box([
         'id' => 'platformcoop_configuration',
@@ -28,13 +28,6 @@ function page()
             'https://go.newschool.edu/s/1811/17/interior.aspx?sid=1811&gid=2&pgid=537&cid=1698&dids=34&bledit=1',
     ]);
     $cmb->add_field([
-        'name' => __('Newsletter Signup Text', 'pcc-framework'),
-        'desc' => __('Prompt for newsletter signup call to action (use in site footer).', 'pcc-framework'),
-        'id' => 'signup_text',
-        'type' => 'textarea_small',
-        'default' => 'Once a month, we’ll email you with the latest news and activity in the community.',
-    ]);
-    $cmb->add_field([
         'name' => __('Newsletter Signup Link', 'pcc-framework'),
         'desc' =>
             __(
@@ -43,6 +36,49 @@ function page()
             ),
         'id' => 'signup_link',
         'type' => 'text_url',
-        'default' => 'https://lists.riseup.net/www/info/platformcoop-newsletter',
+        'default' => 'https://mailchi.mp/platform/coop',
+    ]);
+}
+
+/**
+ * Register Configuration settings page and meta fields.
+ */
+function localization()
+{
+    $cmb = new_cmb2_box([
+        'id' => 'platformcoop_localization',
+        'title' => __('Localization', 'pcc-framework'),
+        'menu_title' => __('Localization', 'pcc-framework'),
+        'object_types' => ['options-page'],
+        'option_key' => 'platformcoop_localization',
+        'position' => 95,
+        'icon_url'   => 'dashicons-admin-site-alt3',
+        'capability' => 'manage_options',
+    ]);
+
+    $langs = [];
+
+    if (function_exists('pll_languages_list')) {
+        $slugs = pll_languages_list(['hide_empty' => 1]);
+        $names = pll_languages_list(['hide_empty' => 1, 'fields' => 'name']);
+        foreach ($slugs as $k => $slug) {
+            if ($slug !== 'en') {
+                $langs[$slug] = $names[$k];
+            }
+        }
+    }
+
+    asort($langs);
+
+    $cmb->add_field([
+        'name' => __('Localization Settings', 'pcc-framework'),
+        'desc' =>
+            __(
+                'Select the languages you’d like to be displayed to site visitors. English content will always be displayed.', // @codingStandardsIgnoreLine
+                'pcc-framework'
+            ),
+        'id' => 'enabled_languages',
+        'type'    => 'multicheck',
+        'options' => $langs
     ]);
 }
